@@ -74,6 +74,7 @@ case "$log" in
     * )
         echo "This commit message doesn't include #major, #minor or #patch. Skipping the tag creation..."
         echo ::set-output name=last_tag::$tag
+	echo ::set-output name=new_tag::$tag
         exit 0
         ;;
 esac
